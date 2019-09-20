@@ -1,2 +1,6 @@
 RewriteEngine On
-RewriteRule ^index$ view/index.php
+RewriteRule ^$ views/sections/our/index.php
+RewriteRule ^client$ views/sections/client/pages/login.php
+RewriteRule ^client/$ views/sections/client/pages/login.php
+RewriteRule ^client/dashboard$ views/sections/client/pages/index.php
+RewriteRule ^client/$ views/sections/client/pages/login.php

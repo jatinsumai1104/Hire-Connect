@@ -4,8 +4,8 @@ require_once('../layout/header.php');
 
 <body class="">
   <?php
-  include_once("../layout/sidebar.php");
- ?>
+    include_once("../layout/sidebar.php");
+  ?>
   <div class="main-content">
     <?php
       require_once('../layout/navigation.php');
