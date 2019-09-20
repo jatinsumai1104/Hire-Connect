@@ -10,7 +10,7 @@ class Company{
   public function login($data){
     $email = $data['company_username'];
     $password = $data['company_password'];   
-    $rs = $this->query->readData($this->table , "company_username = '$email' && company_password = '$password'");
+    $rs = $this->query->readData($this->table , "company_username = '$email' AND company_password = '$password'");
     if(count($rs) == 1){
       return true;
     }else{
