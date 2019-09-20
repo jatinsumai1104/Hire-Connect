@@ -5,13 +5,14 @@ class Queries{
 	private $conn;
 	
 	public function __construct(){
-		$this->conn = new Database();
+		$this->conn = (new Database())->getConnection();
 	}
 	
 	//getPost() : returns the fetched data from the db
 	//$table is used for table name
 	public function readData($table,$wheres = 1){
-		$query = "Select * from {$table} as t join meta_data as m where $wheres and t.meta_data_id = m.meta_data.id and m.is_deleted = 0";
+		$query = "Select * from {$table} as t join meta_data as m where $wheres and t.meta_data_id = m.meta_data_id and m.is_deleted = 0";
+		// echo $query;
 		return $this->execteQuery($query);
 	}
 	
