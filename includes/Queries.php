@@ -4,7 +4,7 @@ class Queries{
 	
 	private $conn;
 	
-	public function __construct($conn){
+	public function __construct(){
 		$this->conn = new Database();
 	}
 	

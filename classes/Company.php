@@ -22,4 +22,5 @@ class Company{
     $this->query->updateData($this->table , $data2 , "company_contact_email = '$email'");
   }
 }
+$com = new Company();
 ?>

@@ -4,8 +4,6 @@
 <!-- Header -->
 <body class="bg-default">
   <div class="main-content">
-    <!-- Navbar -->
-   
     <!-- Header -->
     <div class="header bg-gradient-primary py-7 py-lg-8">
       <div class="container">
