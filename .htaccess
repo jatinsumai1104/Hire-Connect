@@ -4,4 +4,5 @@ RewriteRule ^client$ views/sections/client/pages/login.php
 RewriteRule ^client/$ views/sections/client/pages/login.php
 RewriteRule ^client/dashboard$ views/sections/client/pages/index.php
 RewriteRule ^client/$ views/sections/client/pages/login.php
-RewriteRule ^client/addProfile$ views/sections/client/pages/addJobProfile.php
+RewriteRule ^client/addJobProfile$ views/sections/client/pages/addJobProfile.php
+RewriteRule ^client/history$ views/sections/client/pages/tables.php

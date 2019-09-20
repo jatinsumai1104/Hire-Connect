@@ -15,7 +15,7 @@ class Company{
     $password = $data['company_password'];   
     $rs = $this->query->readData($this->table , "company_username = '$email' AND company_password = '$password'");
     if(count($rs) == 1){
-      return true;
+      return $rs[0];
     }else{
       return false;
     }

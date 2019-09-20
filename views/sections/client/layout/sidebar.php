@@ -5,7 +5,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Brand -->
-      <a class="navbar-brand pt-0" href="../index.html">
+      <a class="navbar-brand pt-0" href="<?php echo BASEURL.'client/dashboard'?>">
         <img src="../../../assets/client/assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
       </a>
       <!-- User -->
@@ -90,37 +90,27 @@
         <!-- Navigation -->
         <ul class="navbar-nav">
           <li class="nav-item  class=" active" ">
-          <a class=" nav-link " href=" ../index.html"> <i class="ni ni-tv-2 text-primary"></i> Dashboard
+          <a class=" nav-link active" href="<?php echo BASEURL.'client/dashboard'?>"> <i class="ni ni-tv-2 text-primary"></i> Dashboard
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  active " href="../pages/icons.php">
-              <i class="ni ni-planet text-blue"></i> Icons
+            <a class="nav-link  active " href="<?php echo BASEURL.'client/addJobProfile'?>">
+              <i class="ni ni-planet text-blue"></i> Add Job Profile
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="../pages/maps.html">
-              <i class="ni ni-pin-3 text-orange"></i> Maps
+            <a class="nav-link active" href="<?php echo BASEURL.'client/history'?>">
+              <i class="ni ni-single-02 text-yellow"></i> Students History
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="../pages/profile.html">
-              <i class="ni ni-single-02 text-yellow"></i> User profile
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="../pages/tables.html">
+            <a class="nav-link active" href="<?php echo BASEURL.'client/history'?>">
               <i class="ni ni-bullet-list-67 text-red"></i> Tables
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../pages/login.html">
-              <i class="ni ni-key-25 text-info"></i> Login
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/register.html">
-              <i class="ni ni-circle-08 text-pink"></i> Register
+            <a class="nav-link active" href="<?php echo BASEURL.'client/dashboard'?>">
+              <i class="ni ni-key-25 text-info"></i> Logout
             </a>
           </li>
         </ul>
