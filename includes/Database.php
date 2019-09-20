@@ -5,12 +5,12 @@ class Database{
 	private $host = "localhost";
 	private $user = "root";
 	private $password = "";
-	private $dbname = "hire connect";
+	private $dbname = "hire_connect";
 
     /**
      * Database constructor.
      */
-  private function __construct(){
+  function __construct(){
 		try{
 			$dsn = "mysql:host=$this->host;dbname=$this->dbname";
 

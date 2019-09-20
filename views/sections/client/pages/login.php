@@ -46,7 +46,7 @@
               <div class="text-center text-muted mb-4">
                 <small>Login In with credentials</small>
               </div>
-              <form role="form">
+              <form role="form" method="POST" action="<?php echo BASEURL ?>helper/router.php">
                 <div class="form-group mb-3">
                   <div class="input-group input-group-alternative">
                     <div class="input-group-prepend">
@@ -57,7 +57,7 @@
                     <input
                       class="form-control"
                       placeholder="Email"
-                      type="email"
+                      type="email" name="email"
                     />
                   </div>
                 </div>
@@ -71,7 +71,7 @@
                     <input
                       class="form-control"
                       placeholder="Password"
-                      type="password"
+                      type="password" name="password"
                     />
                   </div>
                 </div>
@@ -88,8 +88,8 @@
                   </label>
                 </div>
                 <div class="text-center">
-                  <button type="button" class="btn btn-primary my-4"
-                    >Sign in</button
+                  <button type="submit" class="btn btn-primary my-4"
+                   name="login_process">Sign in</button
                   >
                 </div>
               </form>

@@ -4,8 +4,8 @@ class Queries{
 	
 	private $conn;
 	
-	public function __construct($conn){
-		$this->conn = new Database();
+	public function __construct(){
+		$this->conn = (new Database())->getConnection();
 	}
 	
 	//getPost() : returns the fetched data from the db
