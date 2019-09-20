@@ -1,0 +1,41 @@
+Company:
+	company_id
+	company_logo_id
+	Name
+	Email
+	Password
+	About Us
+	Contact_id
+	contact_email_id
+	Website
+	rating
+	meta_id
+company_images
+	image_id
+	image
+	image_ext
+	company_id
+Profiles:
+	profile_id
+	job_profike_name
+	profile_description
+	criteria
+	Package_id
+	Bond
+	start_end
+	end_date
+	expected_drive_date
+	meta data
+Process
+	process_id
+	profile_id
+	aptitude_test
+	coding_test
+	interview
+	metadata
+	
+Package:
+	package_id
+	package_CTC
+	package_lpa
+	package_benefits	
