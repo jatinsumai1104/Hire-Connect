@@ -1,4 +1,5 @@
 <?php
+  session_start();
   require_once('../layout/header.php');
 ?>
 <!-- Header -->
@@ -98,7 +99,7 @@
               <a href="#" class="text-light"><small>Forgot password?</small></a>
             </div>
             <div class="col-6 text-right">
-              <a href="#" class="text-light"
+              <a href="<?php echo BASEURL."views/sections/client/pages/register.php"?>" class="text-light"
                 ><small>Create new account</small></a
               >
             </div>

@@ -48,13 +48,13 @@
               <div class="text-center text-muted mb-4">
                 <small>Sign up with credentials</small>
               </div>
-              <form role="form">
+              <form role="form" method="POST" action="<?php echo BASEURL."helper/router.php"?>">
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Name" type="text">
+                    <input class="form-control" placeholder="Name" type="text" name="company_name">
                   </div>
                 </div>
                 <div class="form-group">
@@ -62,7 +62,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Email" type="email">
+                    <input class="form-control" placeholder="Email" type="email" name="company_username">
                   </div>
                 </div>
                 <div class="form-group">
@@ -70,7 +70,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Password" type="password">
+                    <input class="form-control" placeholder="Password" type="password" name="company_password">
                   </div>
                 </div>
                 
@@ -85,7 +85,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="button" class="btn btn-primary mt-4">Create account</button>
+                  <button type="submit" name="register_process" class="btn btn-primary mt-4">Create account</button>
                 </div>
               </form>
             </div>

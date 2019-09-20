@@ -13,7 +13,7 @@ class Mailer{
         $this->mail->SMTPSecure = 'ssl';          // secure transfer enabled REQUIRED for Gmail
         $this->mail->Host = "smtp.gmail.com";
         $this->mail->Port = 465;               // or 587
-        $this->mail->IsHTML(true);
+        // $this->mail->IsHTML(true);
     }
 
 
@@ -23,8 +23,8 @@ class Mailer{
         $this->mail->Password = "99@jatin";
         $this->mail->SetFrom("2016.jatin.sumai@ves.ac.in", "Hire Connect");
         $this->mail->Subject = $subject;
-		$this->mail->AddEmbeddedImage("../../../assets/images/logo.png", "logo", "logo.png", 'base64', 'image/png');
-		$this->mail->AddEmbeddedImage('../../../assets/images/mail-logo.png', 'mail-logo', 'mail-logo.png', 'base64', 'image/png');
+		// $this->mail->AddEmbeddedImage("../../../assets/images/logo.png", "logo", "logo.png", 'base64', 'image/png');
+		// $this->mail->AddEmbeddedImage('../../../assets/images/mail-logo.png', 'mail-logo', 'mail-logo.png', 'base64', 'image/png');
         $this->mail->Body = $body;
 
 
